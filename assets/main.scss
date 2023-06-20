@@ -1,0 +1,11 @@
+---
+---
+/* Override theme defaults */
+
+/* load _sass/minima.scss */
+@import "minima";
+
+/* Put any custom CSS here */
+h1 {
+  font-size: 32px !important;
+}
