@@ -1,12 +1,11 @@
 ---
 layout: post
 title:  "Observability with Spring Boot 2"
-excerpt: "To be determined"
+excerpt: "This blog will tell you why and show you how you can implement observability using Spring Boot, Micrometer and GCPs Operations suite."
 date:   2023-07-04 19:11:56 +0200
 categories: Spring Boot
 ---
 
-# Observability in Spring Boot 2
 Note: This blog post assumes basic familiarity with Spring Boot and Google Cloud Platform. Detailed configuration and setup instructions can be found in the official documentation for each respective technology.
 
 In today's fast-paced and complex software environments, having a deep understanding of how your applications behave and perform in production is crucial. 
@@ -127,7 +126,7 @@ From there, you can create custom dashboards, set up alerting policies, and gain
 
 For example, to get an overview of the memory usage of the application we just finished, we can create a dashboard within GCP to show the `custom/jvm/memory/used` metric:
 
-![Dashboard example](assets/GCP-monitoring-observability-example.png)
+![Dashboard example](/assets/GCP-monitoring-observability-example.png)
 
 In addition to metrics, Google Cloud Operations also supports logging and distributed tracing. 
 When applications are deployed in Cloud Run, logging will automatically be collected by Google Cloud Operations.
