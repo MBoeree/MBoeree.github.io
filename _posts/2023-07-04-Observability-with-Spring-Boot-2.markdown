@@ -5,7 +5,7 @@ excerpt: "This blog will tell you why and show you how you can implement observa
 date:   2023-09-19 22:08:00 +0200
 categories: Spring Boot
 ---
-
+![Article Banner](/assets/GCP-monitoring-observability-banner.jpg)
 Note: This blog post assumes basic familiarity with Spring Boot and Google Cloud Platform. Detailed configuration and setup instructions can be found in the official documentation for each respective technology.
 
 In today's fast-paced and complex software environments, having a deep understanding of how your applications behave and perform in production is crucial. 
