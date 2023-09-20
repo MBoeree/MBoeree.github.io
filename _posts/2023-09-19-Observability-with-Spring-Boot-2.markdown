@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Observability with Spring Boot 2"
-excerpt: "This article will tell you why and show you how you can implement observability using Spring Boot, Micrometer and GCPs Operations suite."
+excerpt: "This article will tell you why and show you how you can implement observability using Spring Boot 2, Micrometer and GCPs Operations suite."
 date:   2023-09-19 22:08:00 +0200
 categories: Spring Boot
 ---
