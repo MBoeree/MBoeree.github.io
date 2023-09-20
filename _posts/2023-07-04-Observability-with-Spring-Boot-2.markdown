@@ -135,7 +135,7 @@ By enabling the appropriate configurations in your Spring Boot application, you 
 
 # Conclusion
 Achieving observability in your Spring Boot 2 applications is now easier than ever, thanks to the combination of Micrometer and the micrometer-registry-stackdriver dependency. 
-By integrating with Google Cloud Platform's operations suite, you gain powerful monitoring and observability capabilities, enabling you to identify and resolve issues efficiently. 
+By integrating with Google Cloud Platform's operations suite, you gain powerful monitoring and observability capabilities, enabling you to identify and resolve issues efficiently without compromising the ability of scaling your platform down. 
 Whether you're running your applications in a production environment or a development setting, observability is a crucial aspect that can help you deliver high-quality software and ensure smooth operations.
 
 So why wait? Start leveraging the power of Spring Boot 2, Micrometer, and Stackdriver to unlock the full potential of observability in your applications today!
