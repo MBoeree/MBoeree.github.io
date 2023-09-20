@@ -1,17 +1,17 @@
 ---
 layout: post
 title:  "Observability with Spring Boot 2"
-excerpt: "This blog will tell you why and show you how you can implement observability using Spring Boot, Micrometer and GCPs Operations suite."
+excerpt: "This article will tell you why and show you how you can implement observability using Spring Boot, Micrometer and GCPs Operations suite."
 date:   2023-09-19 22:08:00 +0200
 categories: Spring Boot
 ---
 ![Article Banner](/assets/GCP-monitoring-observability-banner.jpg)
 
-Note: This blog post assumes basic familiarity with Spring Boot and Google Cloud Platform. Detailed configuration and setup instructions can be found in the official documentation for each respective technology.
+Note: This post assumes basic familiarity with Spring Boot and Google Cloud Platform. Detailed configuration and setup instructions can be found in the official documentation for each respective technology.
 
 In today's fast-paced and complex software environments, having a deep understanding of how your applications behave and perform in production is crucial. 
 Observability plays a vital role in gaining visibility into the inner workings of your applications, enabling you to identify and resolve issues quickly.
-In this blog post, we'll explore how to achieve observability in your Spring Boot 2 applications using Micrometer and integrate this with Google Cloud's operations suite.
+In this post, we'll explore how to achieve observability in your Spring Boot 2 applications using Micrometer and integrate this with Google Cloud's operations suite.
 
 ## Understanding Observability
 Observability refers to the ability to understand the internal state of a system based on its external outputs. 
