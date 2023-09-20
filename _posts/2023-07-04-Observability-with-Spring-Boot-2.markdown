@@ -133,7 +133,7 @@ In addition to metrics, Google Cloud Operations also supports logging and distri
 When applications are deployed in Cloud Run, logging will automatically be collected by Google Cloud Operations.
 By enabling the appropriate configurations in your Spring Boot application, you can also seamlessly integrate your traces into GCP as well, providing a unified view of your system's observability.
 
-Conclusion:
+# Conclusion
 Achieving observability in your Spring Boot 2 applications is now easier than ever, thanks to the combination of Micrometer and the micrometer-registry-stackdriver dependency. 
 By integrating with Google Cloud Platform's operations suite, you gain powerful monitoring and observability capabilities, enabling you to identify and resolve issues efficiently. 
 Whether you're running your applications in a production environment or a development setting, observability is a crucial aspect that can help you deliver high-quality software and ensure smooth operations.
