@@ -23,7 +23,8 @@ Micrometer is a popular metrics instrumentation library for Java applications.
 It provides a vendor-neutral abstraction layer for collecting and publishing metrics, allowing developers to easily integrate with different monitoring systems. 
 Spring Boot 2 has excellent support for Micrometer out of the box, making it an ideal choice for implementing observability in your applications.
 With the [introduction of Spring Framework 6](https://github.com/spring-projects/spring-framework/wiki/What%27s-New-in-Spring-Framework-6.x/#observability) and Spring Boot 3 these functionalities have been further integrated into the Spring ecosystem.
-The classic approach of using Micrometer is by making it expose endpoints that return information about the requested metric. Examples of these metrics are HTTP metrics like the amount of inbound and outbound requests and jvm metrics like memory utilisation and garbage collection performance.
+The classic approach of using Micrometer is by making it expose endpoints that return information about the requested metric. This means that metrics are requested from the application by aggregation tooling. 
+Examples of these metrics are HTTP metrics like the amount of inbound and outbound requests and jvm metrics like memory utilisation and garbage collection performance.
 Using these endpoints, one can create dashboards that aggregate this information and give you an overview of the operational state of your entire platform.
 
 ### Google Cloud Operations - Powerful Monitoring and Observability
@@ -37,7 +38,8 @@ One way to fix this issue is to make use of Google Cloud Operations and the micr
 Google Cloud Operations, formerly called Stackdriver, offers a comprehensive suite of monitoring and observability services. 
 It provides a unified platform for collecting and analyzing metrics, logs, and traces across various GCP services, as well as other supported technologies.
 By utilizing the micrometer-registry-stackdriver dependency, we can seamlessly integrate our Spring Boot 2 application with Google Cloud Operations, gaining access to its powerful monitoring capabilities.
-The micrometer-registry-stackdriver dependency makes it possible to send the metric information from the application to GCP instead of the other way around and therefore not only allowing the applications to scale down to zero instances but also making it easy to collect metrics from multiple instances of the same application.
+The micrometer-registry-stackdriver dependency makes it possible to send the metric information from the application to GCP instead of the other way around.
+This does not only allow the applications to scale down to zero instances, but also makes it easy to collect metrics from multiple instances of the same application.
 
 ## Building our application
 To get started, we will need a Spring Boot 2 application and a Google Cloud Platform account. 
@@ -54,6 +56,7 @@ Including the following dependencies to your pom.xml, since we use Maven in this
     <artifactId>micrometer-registry-stackdriver</artifactId>
 </dependency>
 ```
+In this case, no explicit version declaration is needed since I'm using the `spring-boot-starter-parent` parent project, which comes with a dependency management section containing versions for all supported dependencies.
 Once the dependencies are added, we will need to configure our Spring Boot application to publish metrics to the Google Cloud Platform.
 In your application's configuration file (e.g., application.properties), enable stackdriver and reference your GCP project:
 
